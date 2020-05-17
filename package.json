@@ -1,7 +1,7 @@
 {
   "name": "listsandconditionals",
   "version": "0.1.0",
-  "homepage": "https://ratheeshjames.github.io/list-and-condition",
+  "homepage": "https://ratheeshjames.github.io/lists-conditonals",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.14",
@@ -15,7 +15,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "@material-ui/styles": "^4.9.14",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "gh-pages": "^2.2.0"
   }
 }
