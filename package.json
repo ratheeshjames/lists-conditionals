@@ -1,7 +1,7 @@
 {
-  "name": "listsandconditionals",
-  "version": "0.1.0",
   "homepage": "https://ratheeshjames.github.io/lists-conditonals",
+  "name": "lists-conditionals",
+  "version": "0.1.0",  
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.14",
@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "@material-ui/styles": "^4.9.14",
-    "prettier": "^2.0.5",
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^2.2.0",
+    "prettier": "^2.0.5"
   }
 }
