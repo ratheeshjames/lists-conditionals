@@ -6,6 +6,8 @@ import Typography from "@material-ui/core/Typography";
 import { useMediaQuery } from "@material-ui/core";
 import { createMuiTheme } from "@material-ui/core/styles";
 import ThemeProvider from "@material-ui/styles/ThemeProvider";
+import IconButton from '@material-ui/core/IconButton';
+import MoreIcon from '@material-ui/icons/MoreVert';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -15,8 +17,9 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(2),
   },
   title: {
-    flexGrow: 1,
+    flexGrow: 1,    
   },
+  offset: theme.mixins.toolbar,
 }));
 
 export default function ButtonAppBar() {
@@ -55,13 +58,17 @@ export default function ButtonAppBar() {
   return (
     <div className={classes.root}>
       <ThemeProvider theme={barTheme}>
-        <AppBar position="static">
+        <AppBar position="fixed">
           <Toolbar>
             <Typography variant="h6" className={classes.title}>
               Lists and Conditionals
             </Typography>
+            <IconButton aria-label="display more actions" edge="end" color="inherit">
+            <MoreIcon />
+          </IconButton>
           </Toolbar>
-        </AppBar>
+        </AppBar>        
+        <div className={classes.offset} />
       </ThemeProvider>
     </div>
   );

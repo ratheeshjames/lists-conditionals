@@ -8,6 +8,7 @@ import Typography from "@material-ui/core/Typography";
 import ValidationComponent from "./ValidationComponent/ValidationComponent";
 import Char from "./Char/Char";
 
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -25,12 +26,7 @@ class App extends React.Component {
     let updatedText = text.join("");
     text.splice(index, 1);
     updatedText = text.join("");
-    setTimeout(
-      function () {
-        this.setState({ userInput: updatedText });
-      }.bind(this),
-      500
-    );
+    this.setState({ userInput: updatedText });    
   }
 
   render() {
@@ -46,7 +42,7 @@ class App extends React.Component {
       justifyContent: "center",
       flexDirection: "column",
       margin: "8px",
-      width: "100px",
+      width: "100%",
     };
     const charList = this.state.userInput.split("").map((ch, index) => {
       return (
