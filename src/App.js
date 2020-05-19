@@ -44,8 +44,9 @@ class App extends React.Component {
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
-      flexDirection: "row",
+      flexDirection: "column",
       margin: "8px",
+      width: "100px",
     };
     const charList = this.state.userInput.split("").map((ch, index) => {
       return (
